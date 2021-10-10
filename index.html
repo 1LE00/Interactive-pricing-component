@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; display: none;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required. </p>
+    </div>
+
+    <div class="box" id="box">
+      <div class="top">
+        <div class="pageview">
+          <span id="page">100K</span>  Pageviews
+        </div>
+
+        <div class="slider-container">
+          <input type="range" name="range" id="range" class="slider" min="1" max="5" value="3" step="0.1">
+        </div>
+
+        <div class="dollar-month">
+          <span id="dollar">$16.00</span>/<span id="month">month</span> 
+        </div> 
+      </div>
+
+      <div class="middle">
+        <div class="first">
+          Monthly Billing
+        </div>
+
+        <div class="checkbox">
+          <input type="checkbox" name="check" id="check">
+        </div>
+
+        <div class="discount">
+          Yearly Billing <span class="discount-amount"><span id="minus">-</span>25% <span id="discount">discount</span></span> 
+        </div>
+
+      </div>
+
+      <div class="bottom">
+        <div class="left">
+          <ul>
+            <li><img src="images/icon-check.svg" alt="">Unlimited websites</li>
+            <li><img src="images/icon-check.svg" alt="">100% data ownership</li>
+            <li><img src="images/icon-check.svg" alt="">Email reports</li>
+          </ul>          
+        </div>
+
+        <div class="right">
+          Start my trial
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
